@@ -33,7 +33,7 @@ Additionally, an universal differential equation model was trained composed excl
 
 The UDE.jl file contains the implementation of the model summarized as follows, with $u$ as the state of the SIR system at a specific time $t$:
 
-$$
+ ```math
 \begin{equation}
 \begin{aligned}
 \dot{S}_{\text{target}} &= \text{DNN}_{\mu}(u_{\text{target}};u_{\text{neighbors}})[1] \\
@@ -41,7 +41,7 @@ $$
 \dot{R}_{\text{target}} &= \text{DNN}_{\mu}(u_{\text{target}};u_{\text{neighbors}})[3] \\
 \end{aligned}
 \end{equation}
-$$
+ ```
 
 ## SIR+UDE model (SIR+UDE.jl)
 
@@ -49,7 +49,7 @@ The SIR+UDE model combines theSIR model with an extra additive term estimated by
 
 The SIR+UDE.jl shows the implementation of the model: 
 
-$$
+ ```math
 \begin{equation}
 \begin{aligned}
 \dot{S}_{\text{target}} &= -\beta S I - \text{DNN}_{\theta}(u_{\text{neighbors}})\\
@@ -57,7 +57,7 @@ $$
 \dot{R}_{\text{target}} &= \gamma I \\
 \end{aligned}
 \end{equation}
-$$
+ ```
 
 ## SINDY.ipynb
 
