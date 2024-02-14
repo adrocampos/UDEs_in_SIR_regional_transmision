@@ -9,7 +9,7 @@ Highly-interconnected societies difficult to model the spread of infectious dise
 
 # Files
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+Here we upload the files required to reproduce the results showed on the paper.
 
 ## SIR model (SIR.jl)
 
@@ -17,7 +17,7 @@ As baseline, we fit a single SIR model's infection rate $\beta$ amd recovery rat
 
 The SIR.jl file presents the implementation of the SIR model:
 
-$$
+ ```math
 \begin{equation}
 \begin{aligned}
 \dot{S}_{\text{target}} &= -\beta S I  \\
@@ -25,7 +25,7 @@ $$
 \dot{R}_{\text{target}} &= \gamma I \\
 \end{aligned}
 \end{equation}
-$$
+```
 
 ## Full UDE model (UDE.jl)
 
